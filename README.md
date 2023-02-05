@@ -35,7 +35,7 @@ position, status, etc.
 a struct is an object that can hold variouse information. It can be thaught of as a custom 
 data type.
 
-,,,c++
+```c++
 struct sockaddr_in 
 {
   short            sin_family;   // address family (AF_INET)
@@ -44,7 +44,7 @@ struct sockaddr_in
   char             sin_zero[8];  // padding to make struct the same size as sockaddr
 };
 
-     
+  
      
 4. What are the input parameters and return value of socket()
 
