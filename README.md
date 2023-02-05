@@ -16,12 +16,12 @@ When I forced a 50% packet loss usinf TCP, no messages were lost. TCP is designe
 Answer for Question 3:
 TCP protocol is much slower because TCP verifies that it has recieved all the packets it was supposed to.
 
-1. What is argc and *argv[]?
-* argc and argv[] is used to get user input upon program initilization. argv is a pointer to 
+### 1. What is argc and *argv[]?
+ argc and argv[] is used to get user input upon program initilization. argv is a pointer to 
 an array of charicters while argc is contains the number of arguments
 
 
-2. What is a UNIX file descriptor and file descriptor table?
+### 2. What is a UNIX file descriptor and file descriptor table?
 
 A Unix file descriptor us a is a number that identifies a file. It handles things like pipes,
 sockets, or data streams.
@@ -31,7 +31,7 @@ position, status, etc.
 
      
      
-3. What is a struct? What's the structure of sockaddr_in?
+### 3. What is a struct? What's the structure of sockaddr_in?
 a struct is an object that can hold variouse information. It can be thaught of as a custom 
 data type.
 
@@ -44,9 +44,9 @@ struct sockaddr_in
   char             sin_zero[8];  // padding to make struct the same size as sockaddr
 };
 
-  
+  ```
      
-4. What are the input parameters and return value of socket()
+### 4. What are the input parameters and return value of socket()
 
  1) Comunication domain
  2) Socket Type
@@ -56,7 +56,7 @@ struct sockaddr_in
 
 
 
-5. What are the input parameters of bind() and listen()?
+###5. What are the input parameters of bind() and listen()?
 
 1) bind()
   a. socket descriptor returned by socket()
@@ -68,18 +68,18 @@ struct sockaddr_in
   b. maximum nunmber of pending connections
   
 
-6.  Why use while(1)? Based on the code below, what problems might occur if there are multiple simultaneous connections to handle?
+### 6.  Why use while(1)? Based on the code below, what problems might occur if there are multiple simultaneous connections to handle?
 The server can only comnicate with one client at a time
 
 
-7. Research how the command fork() works. How can it be applied here to 
+### 7. Research how the command fork() works. How can it be applied here to 
 better handle multiple connections?
  fork() can be used to handle comuinication between multiple devices by copying 
  the process after the fork() command. this lets the server to listen for other 
  incomming connections. More generally, fork() can preform equivelent processes at the same time.
          
          
- This program makes several system calls such as 'bind', and 'listen.' What exactly is a system call?
+ ### This program makes several system calls such as 'bind', and 'listen.' What exactly is a system call?
   
   A system call is a way a computer program requests a service form from the operation system,
   bind(), listen(), and socket() are examples of a system call
