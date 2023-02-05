@@ -35,6 +35,7 @@ position, status, etc.
 a struct is an object that can hold variouse information. It can be thaught of as a custom 
 data type.
 
+,,,c++
 struct sockaddr_in 
 {
   short            sin_family;   // address family (AF_INET)
