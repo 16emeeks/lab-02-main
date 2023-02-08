@@ -56,7 +56,7 @@ struct sockaddr_in
 
 
 
-###5. What are the input parameters of bind() and listen()?
+### 5. What are the input parameters of bind() and listen()?
 
 1) bind()
   a. socket descriptor returned by socket()
@@ -69,7 +69,7 @@ struct sockaddr_in
   
 
 ### 6.  Why use while(1)? Based on the code below, what problems might occur if there are multiple simultaneous connections to handle?
-The server can only comnicate with one client at a time
+While(1) is used to keep the server open. However, the server can only comnicate with one client at a time
 
 
 ### 7. Research how the command fork() works. How can it be applied here to 
