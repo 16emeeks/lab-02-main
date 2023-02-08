@@ -14,7 +14,7 @@ Answer for Question 2:
 When I forced a 50% packet loss usinf TCP, no messages were lost. TCP is designed to be reliable. If  a packet is not recived, the reeciever asks the sender for the packet again, untill all packets are succesfully recieved.
 
 Answer for Question 3:
-TCP protocol is much slower because TCP verifies that it has recieved all the packets it was supposed to.
+TCP protocol is much slower because TCP verifies that it has recieved all the packets it was supposed to. TCP paclets are also larger then UDP packets.
 
 ### 1. What is argc and *argv[]?
  argc and argv[] is used to get user input upon program initilization. argv is a pointer to 
